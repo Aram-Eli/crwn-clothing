@@ -1,11 +1,4 @@
 
-/*
-default
-
-inverted
-
-google sign in 
-*/
 
 import './button.styles.scss';
 
