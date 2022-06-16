@@ -1,6 +1,7 @@
 
 import { createContext, useState, useEffect } from "react";
 
+// to add items
 const addCartItem = (cartItems, productToAdd) => {
     const existingCartItem = cartItems.find(
         (cartItem) => cartItem.id === productToAdd.id
@@ -15,6 +16,7 @@ const addCartItem = (cartItems, productToAdd) => {
     return [...cartItems, { ...productToAdd, quantity: 1 }];
 };
 
+// to remove items
 const removeCartItem = (cartItems, cartItemToRemove) => {
     const existingCartItem = cartItems.find(
         (cartItem) => cartItem.id === cartItemToRemove.id
@@ -31,6 +33,7 @@ const removeCartItem = (cartItems, cartItemToRemove) => {
     );
 };
 
+// to clear the item from the dropdown list
 const clearCartItem = (cartItems, cartItemToclear) => cartItems.filter((cartItem) => cartItem.id !== cartItemToclear.id);
 
 export const CartContext = createContext({
