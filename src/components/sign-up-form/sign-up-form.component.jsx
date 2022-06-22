@@ -60,6 +60,8 @@ const SignUpForm = () => {
     setFormFields({ ...formFields, [name]: value });
   };
 
+  // This comment was mistake
+
   return (
     <SignUpContainer>
       <h2>Don't have an account?</h2>
